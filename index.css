@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Satisfy";
+}
+
+:root {
+  font-size: 16px;
+}
+
+/* banner */
+
+.banner {
+  height: 100px;
+  width: 100vw;
+  background: #337ea1;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  left: 43%;
+}
+
+/* animation effect */
+
+button {
+  font-family: arial;
+  position: absolute;
+  top: 101%;
+  right: 85%;
+  width: 40px;
+  height: 40px;
+  background: #e5e5e5;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+button::after {
+  content: "Animation Effect Off";
+  position: absolute;
+  left: 105%;
+  margin-left: 10px;
+  top: 0%;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.effectOn {
+  background: #e5e5e5;
+}
+.effectOff {
+  background: url(./images/xButton.png), #e5e5e5;
+  background-position: center;
+  background-size: cover;
+}
+
+.transitionEffect {
+  transform: rotateX(90deg);
+  transition-duration: 1000ms;
+  transition-property: transform;
+}
+
+/* header page */
+
+.header {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+input {
+  border-radius: 30px;
+  border: 2px solid black;
+  font-family: arial;
+  height: 40px;
+  width: 300px;
+  font-size: 1.3rem;
+  background: #e5e5e5;
+}
+
+img {
+  /* img enter button */
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+}
+.task-container {
+  top: 100%;
+  left: -12%;
+  position: absolute;
+}
+
+.newTask {
+  width: 400px;
+  min-height: 40px;
+  background: #337ea1;
+  box-shadow: 5px 3px 10px black;
+  border-radius: 10px;
+  color: #e5e5e5;
+  font-weight: bold;
+  margin-top: 30px;
+  font-family: arial;
+  text-align: center;
+  word-wrap: break-word;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.removeButton {
+  width: 30px;
+  height: 30px;
+  background: url("./images/xButton.png");
+  position: relative;
+  float: right;
+  left: 40px;
+  border-radius: 7px;
+  background-position: center;
+  background-size: cover;
+}
+
+.tip {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  background: url(./images/TipMessage.png);
+  height: 182px;
+  width: 161px;
+}
+
+.xtip {
+  width: 25px;
+  height: 25px;
+  background: url(./images/xTip.png);
+  top: 15%;
+  left: 80%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.backtop {
+  width: 50px;
+  height: 50px;
+  background: url(./images/backToTopButton.png);
+  position: fixed;
+  cursor: pointer;
+  top: 80%;
+  left: 5%;
+  border-radius: 20px;
+  display: none;
+}
